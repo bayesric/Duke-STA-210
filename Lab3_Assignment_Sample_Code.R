@@ -1,0 +1,5 @@
+y1 <- rnorm(1000)
+y2 <- rcauchy(1000)
+q1 <- quantile(x=y1, prob = seq(1/50,1-1/50,1/50))
+q2 <- quantile(x=y2, prob = seq(1/50,1-1/50,1/50))
+plot(q1,q2,xlab="standard normal", ylab="standar Cauchy")
